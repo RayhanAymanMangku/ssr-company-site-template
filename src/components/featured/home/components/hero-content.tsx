@@ -33,7 +33,7 @@ const HeroContent = ({ section, title, imageUrl, isDisplayButton }: HeroContent)
                 <Button
                   variant="outline"
                   size="default"
-                  className="bg-transparent rounded-2xl mt-6 md:mt-8 px-6 py-3 text-sm sm:text-base hover:bg-white/10 border-white/30 hover:border-white/50 hover:text-white"
+                  className="bg-transparent rounded-2xl mt-6 md:mt-8 px-6 py-3 text-sm hover:bg-white/10 border-white/30 hover:border-white/50 hover:text-white"
                 >
                   See Details
                 </Button>
