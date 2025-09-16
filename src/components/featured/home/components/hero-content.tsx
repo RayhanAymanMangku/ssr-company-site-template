@@ -25,15 +25,15 @@ const HeroContent = ({ section, title, imageUrl, isDisplayButton }: HeroContent)
             <div className="absolute inset-0 bg-gradient-radial from-white/10 via-transparent to-transparent rounded-2xl sm:rounded-3xl"></div>
             <div className="relative z-10 flex flex-col w-full items-center justify-center text-center">
               <p className="text-xs sm:text-sm uppercase text-gray-400 mb-2 sm:mb-4">{section}</p>
-              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-medium w-full sm:w-5/6 lg:w-2/3 leading-tight sm:leading-tight md:leading-tight">
+              <h1 className="text-2xl md:text-5xl font-medium w-full leading-tight sm:leading-tight md:leading-tight">
                 {title}
               </h1>
               {isDisplayButton && (
                 /* Made button responsive with better spacing */
                 <Button
                   variant="outline"
-                  size="lg"
-                  className="bg-transparent rounded-2xl sm:rounded-3xl mt-4 sm:mt-6 lg:mt-8 px-6 sm:px-8 py-2 sm:py-3"
+                  size="default"
+                  className="bg-transparent rounded-2xl mt-6 md:mt-8 px-6 py-3 text-sm sm:text-base hover:bg-white/10 border-white/30 hover:border-white/50 hover:text-white"
                 >
                   See Details
                 </Button>
