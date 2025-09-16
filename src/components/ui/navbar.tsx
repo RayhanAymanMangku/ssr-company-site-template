@@ -114,17 +114,17 @@ export default function Navbar({ logoText, telNumber, email }: NavbarProps) {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetTitle></SheetTitle>
-                <div className="flex flex-col space-y-4 pt-8">
+                <div className="flex flex-col space-y-4 p-4">
                   <Link href="/" className="flex items-center space-x-2 mb-8">
                     <Building2 className="h-6 w-6 text-primary" />
-                    <span className="text-lg font-bold">Slipform Indonesia.</span>
+                    <span className="text-lg font-bold">{logoText}</span>
                   </Link>
 
                   {navItems.map((item) => (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-lg font-medium text-foreground hover:text-amber-400 transition-colors py-2"
+                      className="font-medium text-foreground hover:text-amber-400 transition-colors py-2"
                     >
                       {item.name}
                     </Link>
@@ -143,7 +143,7 @@ export default function Navbar({ logoText, telNumber, email }: NavbarProps) {
                       <Mail className="h-5 w-5 text-primary" />
                       <div>
                         <p className="text-sm text-muted-foreground">Email Us</p>
-                        <a href="mailto:slipform@slipform.co.id" className="font-medium">slipform@slipform.co.id</a>
+                        <a href={`mailto:${email}`} className="font-medium">{email}</a>
                       </div>
                     </div>
                   </div>

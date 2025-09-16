@@ -8,7 +8,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <main>
+        <main className="container mx-auto overflow-x-hidden">
             <Navbar
                 logoText="Company"
                 telNumber="(0123) 456789"
